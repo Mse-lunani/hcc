@@ -1,6 +1,7 @@
 <?php
 include_once 'operations.php';
 $m['status'] = 0;
+$m['data'] = [];
 $id = security("job_id");
 $sql = "SELECT * FROM requirements WHERE job_id = '$id'";
 $result = select_rows($sql);
